@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "bad1d389-428b-4ff4-a6fa-3670ffc1bac1",
+		"name": "Empleado",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EmpleadoPST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identificacion\": \"122245511\",\r\n    \"tipoIdentificacion\": \"CC\",\r\n    \"nombres\": \"Manuel Guillermo\",\r\n    \"apellidos\": \"Gonzalez Brochero\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8086/agenciadigital/empleado",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"agenciadigital",
+						"empleado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EmpleadoGetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8086/agenciadigital/empleado/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"agenciadigital",
+						"empleado",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EmpleadoPTC",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombres\": \"Manuel Andres\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8086/agenciadigital/empleado/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"agenciadigital",
+						"empleado",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EmpleadoGetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8086/agenciadigital/empleado?fechaInicio=2020-10-31T00:23:00Z&fechaFin=2020-11-01T11:23:00Z",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"agenciadigital",
+						"empleado"
+					],
+					"query": [
+						{
+							"key": "fechaInicio",
+							"value": "2020-10-31T00:23:00Z"
+						},
+						{
+							"key": "fechaFin",
+							"value": "2020-11-01T11:23:00Z"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EmpleadoDEL",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8086/agenciadigital/empleado/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"agenciadigital",
+						"empleado",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

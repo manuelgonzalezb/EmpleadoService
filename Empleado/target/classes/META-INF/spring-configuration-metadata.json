@@ -1,0 +1,12 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "org.openapitools.configuration.ConectionConfig",
+      "name": "spring.datasource.write",
+      "sourceMethod": "public javax.sql.DataSource WriteDatasource() ",
+      "type": "javax.sql.DataSource"
+    }
+  ],
+  "properties": []
+}

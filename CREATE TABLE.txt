@@ -1,0 +1,20 @@
+-- Table: public.empleado
+
+-- DROP TABLE public.empleado;
+
+CREATE TABLE public.empleado
+(
+    id integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+    identificacion text COLLATE pg_catalog."default",
+    tipo_identificacion text COLLATE pg_catalog."default",
+    nombres text COLLATE pg_catalog."default",
+    apellidos text COLLATE pg_catalog."default",
+    fecha_registro timestamp without time zone,
+    estado text COLLATE pg_catalog."default",
+    CONSTRAINT id_empleado_pk PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.empleado
+    OWNER to postgres;
